@@ -6,3 +6,8 @@ Student : Kerim Bukvić
 # Opis
 Kao zadatak za projekat 2 iz predmeta "Programiranje u Javi" imamo kreirati aplikaciju za upravljanje životnim navikama (Life Management System).
 Ona treba da sarži Login/Register dio te Main menu sa opcijama (View my profile,FinanceApp i Modules koji treba da sadrži 4 modula).
+
+# Login/register dio
+Završena implementacija login/register dijela aplikacije. Korisniku se otvara prozor u kome unosi korisničko ime i lozinku koja je skrivena(hashirana)
+korištenjem SHA-256 algoritma. Prilikom registracije vrši se provjera da li korisničko ime već postoji u bazi i poklapa li se unesenaa lozinka
+s hash lozinkom u bazi. Login/Register dio mog projekta zamišljen je bez rola/uloga (superadmin,admin,user).
