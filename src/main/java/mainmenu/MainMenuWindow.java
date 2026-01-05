@@ -26,7 +26,7 @@ public class MainMenuWindow {
         });
 
         financeAppButton.addActionListener(e -> {
-            JOptionPane.showMessageDialog(frame, "Prikaz Finance aplikacije - projekat 1", "Finance App", JOptionPane.INFORMATION_MESSAGE);
+            new financeapp.FinanceAppWindow();
         });
 
         modulesButton.addActionListener(e -> {

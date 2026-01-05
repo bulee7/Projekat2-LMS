@@ -91,7 +91,7 @@ public class ViewProfileWindow extends JFrame {
                 int izbor = JOptionPane.showConfirmDialog(this, "Želite li promijeniti lozinku za korisnika : " + username + "?", "Potvrda promjene lozinke!", JOptionPane.YES_NO_OPTION);
                 if (izbor == JOptionPane.YES_OPTION) {
                     userService.azurirajLozinku(username, newPassword);
-                    JOptionPane.showMessageDialog(this, "Lozinka za korisnika " + username + "uspješno promijenjena!");
+                    JOptionPane.showMessageDialog(this, "Lozinka za korisnika " + username + " uspješno promijenjena!");
                 }
             } else {
                 JOptionPane.showMessageDialog(this, "Korisnik" + username + " ne postoji!");
