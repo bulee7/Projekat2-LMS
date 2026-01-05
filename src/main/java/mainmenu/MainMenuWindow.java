@@ -1,7 +1,7 @@
 package mainmenu;
 
 import javax.swing.*;
-import  loginregister.LoginWindow;
+import loginregister.ViewProfileWindow;
 
 public class MainMenuWindow {
     private JPanel JPanel;
@@ -22,7 +22,7 @@ public class MainMenuWindow {
         mainMenu.setText("Dobrodošao na glavni meni, " + username + "!");
 
         viewProfileButton.addActionListener(e -> {
-            JOptionPane.showMessageDialog(frame,"Ovdje će biti opcije za uređivanje profila", "Moj profil", JOptionPane.INFORMATION_MESSAGE);
+            new ViewProfileWindow().setVisible(true);
         });
 
         financeAppButton.addActionListener(e -> {

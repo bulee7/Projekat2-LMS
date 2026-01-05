@@ -28,7 +28,7 @@ public class LoginWindow extends JFrame {
         usernameField = new JTextField(20);
         passwordField = new JPasswordField(20);
 
-        formPanel.add(new JLabel("Korisnicko ime : "));
+        formPanel.add(new JLabel("Korisničko ime : "));
         formPanel.add(usernameField);
         formPanel.add(new JLabel("Lozinka :"));
         formPanel.add(passwordField);

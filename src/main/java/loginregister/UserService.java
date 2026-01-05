@@ -1,5 +1,6 @@
 package loginregister;
 
+import java.util.List;
 import java.util.Optional;
 
 public class UserService {
@@ -37,5 +38,17 @@ public class UserService {
 
     public void izbrisiKorisnika(String korisnickoIme) {
         userRepository.pronadjiPoImenu(korisnickoIme).ifPresent(user->userRepository.izbrisiPoId(user.getId()));
+    }
+
+    public void azurirajKorisnickoIme(String oldUsername, String newUsername) {
+        userRepository.azurirajKorisnickoIme(oldUsername,newUsername);
+    }
+
+    public List<User>sviKorisnici() {
+        return userRepository.sviKorisnici();
+    }
+
+    public boolean postojiKorisnik(String korisnickoIme) {
+        return userRepository.postojiKorisnik(korisnickoIme);
     }
 }
