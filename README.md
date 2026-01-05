@@ -11,3 +11,7 @@ Ona treba da sarži Login/Register dio te Main menu sa opcijama (View my profile
 Završena implementacija login/register dijela aplikacije. Korisniku se otvara prozor u kome unosi korisničko ime i lozinku koja je skrivena(hashirana)
 korištenjem SHA-256 algoritma. Prilikom registracije vrši se provjera da li korisničko ime već postoji u bazi i poklapa li se unesenaa lozinka
 s hash lozinkom u bazi. Login/Register dio mog projekta zamišljen je bez rola/uloga (superadmin,admin,user).
+
+# Main menu dio
+Unutar main menu prozora imamo opcije za prikaz/uređivanje korisničkog profila,financeApp(trenutno nije implementiran) i module(trenutno nisu implementirani). 
+Uređivanje korisničkog profila sadrži opcije za izmjenu korisničkog imena(username),njegove lozinke,brisanje korisnika kao i opciju prikaza svih korisnika unutar aplikacije.
