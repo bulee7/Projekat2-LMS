@@ -13,5 +13,8 @@ korištenjem SHA-256 algoritma. Prilikom registracije vrši se provjera da li ko
 s hash lozinkom u bazi. Login/Register dio mog projekta zamišljen je bez rola/uloga (superadmin,admin,user).
 
 # Main menu dio
-Unutar main menu prozora imamo opcije za prikaz/uređivanje korisničkog profila,financeApp(trenutno nije implementiran) i module(trenutno nisu implementirani). 
+Unutar main menu prozora imamo opcije za prikaz/uređivanje korisničkog profila,financeApp i module(trenutno nisu implementirani). 
 Uređivanje korisničkog profila sadrži opcije za izmjenu korisničkog imena(username),njegove lozinke,brisanje korisnika kao i opciju prikaza svih korisnika unutar aplikacije.
+
+Implementiran projekat 1 - Finance App u main menu dio projekta. Zadržana logika i kod iz projekta 1 uz odrađene modifikacije na GUI dijelu. 
+Također promijenjena baza podataka tako da se i FinanceApp dio sada unosi i čuva u sklopu baze podataka Life Management System-a.
