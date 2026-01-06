@@ -21,5 +21,6 @@ Uređivanje korisničkog profila sadrži opcije za izmjenu korisničkog imena(us
 Implementiran projekat 1 - Finance App u main menu dio projekta. Zadržana logika i kod iz projekta 1 uz odrađene modifikacije na GUI dijelu. 
 Također promijenjena baza podataka tako da se i FinanceApp dio sada unosi i čuva u sklopu baze podataka Life Management System-a.
 
-Kreirana ModulesWindow klasa sa placeholderima umjesto funkcionalnosti modula/trackera,koja se otvara i prikazuje korisniku pritiskom na dugme Moduli unutar 
-Main Menu prozora.
+Kreirana ModulesWindow klasa koja sadrži četiri dugmeta koja vode na zasebne trackere/module.
+Kreirana klasa MongoDBConnection za spajanje pojedinacnih trackera i njihovih podataka u bazu.
+Kreiran prvi tracker - Sleep Tracker koji korisniku omogućava da unese datum i broj sati spavanja gdje pritiskom na dugme "Dodaj" podaci se prikazuju u tabeli i upisuju u kolekciju u bazi. Ispod tabele nalazi se dugme za prikaz statistike koji korisniku izbacuje tabelu sa datumima i satima spavanja,a na dnu tabele izbacuje prosječno vrijeme spavanja u satima na osnovu unesenih podataka.
