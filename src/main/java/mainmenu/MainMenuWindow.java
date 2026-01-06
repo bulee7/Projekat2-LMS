@@ -2,6 +2,7 @@ package mainmenu;
 
 import javax.swing.*;
 import loginregister.ViewProfileWindow;
+import trackers.ModulesWindow;
 
 public class MainMenuWindow {
     private JPanel JPanel;
@@ -30,7 +31,7 @@ public class MainMenuWindow {
         });
 
         modulesButton.addActionListener(e -> {
-            JOptionPane.showMessageDialog(frame, "Otvaranje ostalih modula (trackera)", "Moduli(trackeri)", JOptionPane.INFORMATION_MESSAGE);
+            new ModulesWindow();
         });
     }
 }
