@@ -15,8 +15,11 @@ Unutar LoginWindow i RegisterWindow ubačen meni sa opcijama za izbor boje/teme 
 Korisnik može da bira paletu boja (plava,zelena,narandžasta,roza,dark,cyberpunk).
 
 # Main menu dio
-Unutar main menu prozora imamo opcije za prikaz/uređivanje korisničkog profila,financeApp i module(trenutno nisu implementirani). 
+Unutar main menu prozora imamo opcije za prikaz/uređivanje korisničkog profila,financeApp i module. 
 Uređivanje korisničkog profila sadrži opcije za izmjenu korisničkog imena(username),njegove lozinke,brisanje korisnika kao i opciju prikaza svih korisnika unutar aplikacije.
 
 Implementiran projekat 1 - Finance App u main menu dio projekta. Zadržana logika i kod iz projekta 1 uz odrađene modifikacije na GUI dijelu. 
 Također promijenjena baza podataka tako da se i FinanceApp dio sada unosi i čuva u sklopu baze podataka Life Management System-a.
+
+Kreirana ModulesWindow klasa sa placeholderima umjesto funkcionalnosti modula/trackera,koja se otvara i prikazuje korisniku pritiskom na dugme Moduli unutar 
+Main Menu prozora.
