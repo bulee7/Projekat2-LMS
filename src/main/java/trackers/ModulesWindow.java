@@ -13,14 +13,13 @@ public class ModulesWindow extends JFrame {
         setLayout(new GridLayout(4,1,10,10));
 
         JButton modul1 = new JButton("Sleep tracker");
-        JButton modul2 = new JButton("Modul/Tracker 2");
+        JButton modul2 = new JButton("Mood tracker");
         JButton modul3 = new JButton("Modul/Tracker 3");
         JButton modul4 = new JButton("Modul/Tracker 4");
 
         modul1.addActionListener(e -> new SleepTrackerWindow());
-        modul2.addActionListener(e ->
-                JOptionPane.showMessageDialog(this, "Ova opcija će biti dodana u kasnijoj verziji projekta!"));
-        modul3.addActionListener(e ->
+        modul2.addActionListener(e -> new MoodTrackerWindow());
+                modul3.addActionListener(e ->
                 JOptionPane.showMessageDialog(this, "Ova opcija će biti dodana u kasnijoj verziji projekta!"));
         modul4.addActionListener(e ->
                 JOptionPane.showMessageDialog(this, "Ova opcija će biti dodana u kasnijoj verziji projekta!"));

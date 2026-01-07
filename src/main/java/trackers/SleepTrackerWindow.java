@@ -7,8 +7,6 @@ import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.MongoCollection;
 import org.bson.Document;
 
-
-
 public class SleepTrackerWindow extends JFrame {
 
     private JTextField dateField;
