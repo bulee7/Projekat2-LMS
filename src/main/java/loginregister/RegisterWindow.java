@@ -44,7 +44,7 @@ import java.awt.*;
                 if (color.equals("Dark")) {
                     formPanel.setBackground(Color.DARK_GRAY);
                     for (Component c : formPanel.getComponents()) {
-                        c.setForeground(Color.WHITE);
+                        c.setForeground(Color.BLACK);
                     }
                 } else if (color.equals("Cyberpunk")) {
                     formPanel.setBackground(new Color(20, 20, 40));

@@ -22,6 +22,7 @@ public class SleepTrackerWindow extends JFrame {
 
         MongoDatabase db = MongoDBConnection.getDatabase();
         sleepCollection = db.getCollection("SleepTracker");
+        tableModel = new DefaultTableModel(new Object[]{"Datum", "Broj sati spavanja"}, 0);
 
         for (Document d : sleepCollection.find()) {
             tableModel.addRow(new Object[]{d.getString("datum"), d.getInteger("sati")});
@@ -48,7 +49,6 @@ public class SleepTrackerWindow extends JFrame {
         addButton = new JButton("Dodaj");
         buttonPanel.add(addButton);
 
-        tableModel = new DefaultTableModel(new Object[]{"Datum", "Broj sati spavanja"}, 0);
         sleepTable = new JTable(tableModel);
         sleepTable.setFont(new Font("SansSerif", Font.BOLD, 14));
         sleepTable.setRowHeight(25);
