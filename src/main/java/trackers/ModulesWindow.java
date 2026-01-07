@@ -14,13 +14,12 @@ public class ModulesWindow extends JFrame {
 
         JButton modul1 = new JButton("Sleep tracker");
         JButton modul2 = new JButton("Mood tracker");
-        JButton modul3 = new JButton("Modul/Tracker 3");
+        JButton modul3 = new JButton("Fitness tracker");
         JButton modul4 = new JButton("Modul/Tracker 4");
 
         modul1.addActionListener(e -> new SleepTrackerWindow());
         modul2.addActionListener(e -> new MoodTrackerWindow());
-                modul3.addActionListener(e ->
-                JOptionPane.showMessageDialog(this, "Ova opcija će biti dodana u kasnijoj verziji projekta!"));
+        modul3.addActionListener(e -> new FitnessTrackerWindow());
         modul4.addActionListener(e ->
                 JOptionPane.showMessageDialog(this, "Ova opcija će biti dodana u kasnijoj verziji projekta!"));
 
