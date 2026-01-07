@@ -98,7 +98,7 @@ public class SleepTrackerWindow extends JFrame {
 
             JTable statisticsTable = new JTable(tableModel);
             statisticsFrame.add(new JScrollPane(statisticsTable), BorderLayout.CENTER);
-            statisticsFrame.add(new JLabel("Prosjek sati spavanja korisnika : " + prosjek, SwingConstants.CENTER), BorderLayout.SOUTH);
+            statisticsFrame.add(new JLabel("Prosjek sati spavanja korisnika : " + String.format("%.2f", prosjek), SwingConstants.CENTER), BorderLayout.SOUTH);
             statisticsFrame.setVisible(true);
         });
         setVisible(true);
